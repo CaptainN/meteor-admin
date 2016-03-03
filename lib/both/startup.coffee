@@ -1,6 +1,6 @@
 @AdminTables = {}
 
-adminTablesDom = '<"box"<"box-header"<"box-toolbar"<"pull-left"<lf>><"pull-right"p>>><"box-body"t>>'
+adminTablesDom = '<"box"<"box-header"<"box-toolbar"<"pull-left"<lf>><"pull-right"p>>><"box-body"t>><r>'
 
 adminEditButton = {
 	data: '_id'
@@ -37,6 +37,7 @@ adminCreateTables = (collections) ->
 		_.defaults collection, {
 			showEditColumn: true
 			showDelColumn: true
+			showInSideBar: true
 		}
 
 		columns = _.map collection.tableColumns, (column) ->
